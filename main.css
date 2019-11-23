@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.upperDiv{
+    min-height: 100vh;
+    background-image: url(img/mountain-scenery-1450082.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 10px 0;
+}
+.upperDiv___header{
+    padding: 30px 5%;
+    margin-left: 5%;
+}
+.upperDiv___header___title{
+    font-size: 90px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+/* font-family: 'Pontano Sans', sans-serif;
+font-family: 'Overpass', sans-serif;
+font-family: 'Red Hat Text', sans-serif;
+font-family: 'Roboto', sans-serif; */
+.bigBtn{
+    padding: 20px 70px;
+    background: #00CFAA;
+    color: white;
+    border: #00CFAA 2px solid;
+    font-family: 'Overpass', sans-serif;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+    border-radius: 100px;
+    font-weight: 100;
+    font-size: 1.1em;
+}
+.bigBtn:hover{
+    background: none;
+    color: #00CFAA;
+    border-radius: 0;
+}
+
+
+
+
+/* phone */
+@media only screen and (max-width:1099px) {
+    .half-vw{
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-gap: 10px !important;
+    }
+ }
+
+ /* desktop */
+ @media only screen and (min-width:1100px) {
+    .full-vw{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+    .half-vw{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .one-Third{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+    .quarter-vw{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+ }
+ /* small phone */
+ @media only screen and (max-width:400px) {
+     .d-extraSm-none{
+         display: none;
+     }
+ }
+
